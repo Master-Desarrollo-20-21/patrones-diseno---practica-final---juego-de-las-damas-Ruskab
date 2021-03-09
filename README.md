@@ -1,3 +1,22 @@
+
+# Domain model
+![domain model](doc/svg/domainModel.svg)
+
+# Use cases
+![domain model](doc/svg/usecases.svg)
+
+
+# Design
+
+## Views
+![views](doc/svg/views.svg)
+
+## Controllers
+![controllers](doc/svg/controllers.svg)
+
+## Models
+![models](doc/svg/models.svg)
+
 # Práctica final del curso de Patrones de Diseño
 
 Esta práctica es un tanto libre. Vamos a proponer un enunciado pero Luis está abierto a que se realice otro proyecto de juego, como se comentó en clase y se especifica en el punto "Otras alternativas de práctica" en este mismo readme.

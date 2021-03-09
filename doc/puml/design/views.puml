@@ -1,0 +1,62 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract util.Command {
++ title : string
++ execute() : void
++ isActive() : void
+}
+abstract console.Command <<Command>> {
+    + playController
+}
+class console.PlayCommand <<ConcreteCommand>>
+class console.RedoCommand <<ConcreteCommand>>
+class console.UndoCommand <<ConcreteCommand>>
+abstract util.Menu
+class console.PlayMenu
+class console.GameView {
++ write() : void
+}
+abstract View
+class console.View
+class console.PlayView {
++ interact(PlayController) : void
+}
+class console.CoordinateView {
+ + read : Coordinate(string)
+}
+class console.TokenView {
+    + write() : void
+}
+package controllers {
+}
+
+console.View *-- console.PlayView
+console.View .[#Gray].> controllers
+console.Command .[#Gray].> controllers
+console.GameView .[#Gray].> controllers
+console.PlayMenu .[#Gray].> controllers
+console.PlayView .[#Gray].> controllers
+console.ResumeView .[#Gray].> controllers
+console.StarView .[#Gray].> controllers
+console.View *-- console.ResumeView
+console.View *-- console.StarView
+util.Command <|-- console.Command
+console.Command <|-- console.PlayCommand
+console.Command <|-- console.RedoCommand
+console.Command <|-- console.UndoCommand
+util.Menu <|-- console.PlayMenu
+View <|-- console.View
+util.Menu *-- util.Command
+console.PlayView *-- console.PlayMenu
+console.PlayView *-- console.GameView
+console.GameView .[#Gray].> controllers
+console.PlayCommand .[#Gray].> console.CoordinateView
+console.GameView .[#Gray].> console.TokenView
+console.PlayCommand .[#Gray].> console.TokenView
+console.PlayMenu *-- console.PlayCommand
+console.PlayMenu *-- console.RedoCommand
+console.PlayMenu *-- console.UndoCommand
+console.Command .[#Gray].> controllers
+controllers.ControllerVisitor <|-- console.View
+@enduml

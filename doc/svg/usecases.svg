@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="203.75px" preserveAspectRatio="none" style="width:747px;height:203px;" version="1.1" viewBox="0 0 747 203" width="747.5px" zoomAndPan="magnify"><defs><filter height="300%" id="fargxtyfp2rbg" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.5"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="5.0" dy="5.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[de2effd8dc5bf946a609466312d0f75f]
+entity Player--><ellipse cx="32.5" cy="106.35" fill="#FEFECE" filter="url(#fargxtyfp2rbg)" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.875;"/><path d="M32.5,116.35 L32.5,150.1 M16.25,126.35 L48.75,126.35 M32.5,150.1 L16.25,168.85 M32.5,150.1 L48.75,168.85 " fill="none" filter="url(#fargxtyfp2rbg)" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="50" x="7.5" y="193.8915">Player</text><ellipse cx="692.7481" cy="146.2896" fill="#FEFECE" filter="url(#fargxtyfp2rbg)" rx="40.8731" ry="19.3146" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="37.5" x="673.9981" y="150.9503">Start</text><ellipse cx="570.0965" cy="146.2896" fill="#FEFECE" filter="url(#fargxtyfp2rbg)" rx="38.2215" ry="19.3146" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="33.75" x="553.2215" y="150.9503">Play</text><ellipse cx="427.3262" cy="146.3261" fill="#FEFECE" filter="url(#fargxtyfp2rbg)" rx="60.4512" ry="19.3511" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="65" x="392.0851" y="151.741">Resume</text><ellipse cx="278.5248" cy="146.2896" fill="#FEFECE" filter="url(#fargxtyfp2rbg)" rx="43.5248" ry="19.3146" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="41.25" x="257.8998" y="150.9503">Undo</text><ellipse cx="146.2836" cy="146.2896" fill="#FEFECE" filter="url(#fargxtyfp2rbg)" rx="44.4086" ry="19.3146" style="stroke:#A80036;stroke-width:1.875;"/><text fill="#000000" font-family="sans-serif" font-size="17.5" lengthAdjust="spacing" textLength="42.5" x="125.0336" y="150.9503">Redo</text><!--MD5=[39353cd92ba960c69c4d2a9385fee2c7]
+link Player to Start--><path d="M57.75,98.275 C68.925,82.075 83.7,65.875 101.875,56.975 C202.9125,7.5 504.8125,12.4375 608.125,56.975 C638.65,70.1375 663.275,100.3875 677.875,122.0375 " fill="none" id="Player-to-Start" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="681.3625,127.35,679.3595,115.203,677.9287,122.1278,671.0039,120.697,681.3625,127.35" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[9a505df3ac87f02537cb93af365c2474]
+link Player to Play--><path d="M57.75,98.275 C68.925,82.075 83.7,65.875 101.875,56.975 C178.9625,19.225 409.5625,22.4 488.125,56.975 C518.1375,70.175 541.9375,100.4125 555.975,122.0625 " fill="none" id="Player-to-Play" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="559.3375,127.3625,557.5373,115.1837,555.9913,122.0837,549.0913,120.5377,559.3375,127.3625" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[5fec2ab2a197ce562aec9d83f689b0ce]
+link Player to Resume--><path d="M57.75,98.275 C68.925,82.075 83.7,65.875 101.875,56.975 C190.1875,13.725 230.8875,22.8875 323.125,56.975 C358.2875,69.975 389.6,100.675 408.55,122.4625 " fill="none" id="Player-to-Resume" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="412.6375,127.2375,409.138,115.4343,408.5804,122.4833,401.5313,121.9257,412.6375,127.2375" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[0380c48cc03698e9c08b2a5affc527cb]
+link Player to Undo--><path d="M57.75,98.275 C68.925,82.075 83.7,65.875 101.875,56.975 C137.3,39.625 154.2375,41.75 190.625,56.975 C221.95,70.075 247.7875,100.3375 263.2125,122.0125 " fill="none" id="Player-to-Undo" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="266.9,127.325,264.5899,115.2326,263.335,122.1914,256.3762,120.9366,266.9,127.325" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[714833a1def7c2d3f9278f33fd9da27b]
+link Player to Redo--><path d="M57.825,146.35 C70.275,146.35 82.725,146.35 95.1875,146.35 " fill="none" id="Player-to-Redo" style="stroke:#A80036;stroke-width:1.25;"/><polygon fill="#A80036" points="101.6875,146.35,90.4375,141.35,95.4375,146.35,90.4375,151.35,101.6875,146.35" style="stroke:#A80036;stroke-width:1.25;"/><!--MD5=[86f37c7b4395a9c47d1a810919e8ade9]
+@startuml
+'https://plantuml.com/use-case-diagram
+
+
+Player -> (Start)
+Player -> (Play)
+Player -> (Resume)
+Player -> (Undo)
+Player -> (Redo)
+
+@enduml
+
+@startuml
+
+
+Player -> (Start)
+Player -> (Play)
+Player -> (Resume)
+Player -> (Undo)
+Player -> (Redo)
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 11:25:05 CET 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g></svg>

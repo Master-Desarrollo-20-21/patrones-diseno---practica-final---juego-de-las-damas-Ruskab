@@ -1,0 +1,35 @@
+@startuml
+class Checkers
+class Board
+class Turn
+class Player
+class Piece
+class Coordinate
+class Square
+class Movement
+class SimpleMovement
+class DualMovement
+class Color
+class Goal
+class RemoveAllRivalPieces
+
+Checkers *-- Board
+Checkers *-- "2" Turn
+Turn *-- "2" Player
+Player o-- Goal
+Goal <|-- RemoveAllRivalPieces
+Goal ..> Piece
+Player *-- "20" Piece
+Board *-- "40" Piece
+Board *-- "8x8" Square
+Piece *--> Color
+Player ..> Movement
+Movement ..> Piece
+Movement ..> Square
+Movement <|-- SimpleMovement
+Movement <|-- DualMovement
+Piece <|-- Queen
+Piece <|-- Simple
+Square *-- Coordinate
+
+@enduml

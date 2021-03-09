@@ -1,0 +1,60 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract controller.UseCaseController {
++ session : Session
+}
+interface controller.AceptorController <<Element>>{
+    accept(ControllerVisitor)
+}
+class controller.PlayController <<ConcreteElement>>
+class controller.ResumeController <<ConcreteElement>>
+class controller.StartController <<ConcreteElement>>
+interface controller.ControllerVisitor <<Visitor>> {
+    visit(StartController)
+    visit(PlayController)
+    visit(ResumeController)
+}
+class controller.Logic {
+}
+class Checkers
+package views {
+}
+package models {
+}
+views .[#Gray].> controller.ControllerVisitor
+views .[#Gray].> controller.AceptorController
+views .[#Gray].> controller.PlayController
+views .[#Gray].> controller.ResumeController
+views .[#Gray].> controller.StartController
+views .[#Gray].> controller.UseCaseController
+
+
+Checkers *-- controller.Logic
+Checkers *-- views
+controller.Logic *-- "*" controller.AceptorController
+controller.AceptorController <|-- controller.PlayController
+controller.AceptorController <|-- controller.ResumeController
+controller.AceptorController <|-- controller.StartController
+controller.ControllerVisitor .[#Gray].> controller.PlayController
+controller.ControllerVisitor .[#Gray].> controller.StartController
+controller.ControllerVisitor .[#Gray].> controller.ResumeController
+controller.UseCaseController <|-- controller.StartController
+controller.UseCaseController <|-- controller.ResumeController
+controller.UseCaseController <|-- controller.PlayController
+controller.UseCaseController <|-- controller.UndoController
+controller.UseCaseController <|-- controller.RedoController
+controller.AceptorController .[#Gray].> controller.ControllerVisitor
+controller.UseCaseController <|-- controller.ActionController
+controller.PlayController *-- controller.UndoController
+controller.PlayController *-- controller.RedoController
+controller.PlayController *-- controller.ActionController
+controller.Logic .[#Gray].> models
+controller.PlayController .[#Gray].> models
+controller.UseCaseController .[#Gray].> models
+controller.StartController .[#Gray].> models
+controller.ResumeController .[#Gray]..> models
+controller.ActionController .[#Gray]..> models
+controller.UndoController .[#Gray]..> models
+controller.RedoController .[#Gray]..> models
+@enduml

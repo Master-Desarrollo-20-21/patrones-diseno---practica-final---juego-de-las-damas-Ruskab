@@ -1,0 +1,15 @@
+package ikab.checkers.utils;
+
+public enum Direction {
+
+	VERTICAL,
+	HORIZONTAL,
+	MAIN_DIAGONAL,
+	INVERSE_DIAGONAL,
+	DOWN_TO_UP_RIGHT,
+	DOWN_TO_UP_LEFT,
+	UP_TO_DOWN_RIGHT,
+	UP_TO_DOWN_LEFT,
+	NULL;
+
+}

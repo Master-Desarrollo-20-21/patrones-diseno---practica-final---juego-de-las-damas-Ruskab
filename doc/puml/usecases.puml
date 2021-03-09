@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+
+Player -> (Start)
+Player -> (Play)
+Player -> (Resume)
+Player -> (Undo)
+Player -> (Redo)
+
+@enduml
