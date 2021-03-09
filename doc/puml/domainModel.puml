@@ -3,33 +3,36 @@ class Checkers
 class Board
 class Turn
 class Player
-class Piece
+class Token
 class Coordinate
 class Square
 class Movement
 class SimpleMovement
-class DualMovement
 class Color
 class Goal
-class RemoveAllRivalPieces
+class RemoveAllRivalTokens
 
 Checkers *-- Board
 Checkers *-- "2" Turn
 Turn *-- "2" Player
 Player o-- Goal
-Goal <|-- RemoveAllRivalPieces
-Goal ..> Piece
-Player *-- "20" Piece
-Board *-- "40" Piece
+Goal <|-- RemoveAllRivalTokens
+Goal ..> Token
+Player *-- "20" Token
+Board *-- "40" Token
 Board *-- "8x8" Square
-Piece *--> Color
+Token *--> Color
+Color <|-- B
+Color <|-- W
 Player ..> Movement
-Movement ..> Piece
+Movement ..> Token
 Movement ..> Square
-Movement <|-- SimpleMovement
-Movement <|-- DualMovement
-Piece <|-- Queen
-Piece <|-- Simple
+Movement <|--- SimpleMovement
+Movement <|-- AttackMovement
+Movement <|--- QueenMovement
+Movement <|-- QueenAttack
+Token <|-- Queen
+Token <|-- Simple
 Square *-- Coordinate
 
 @enduml
